@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.buttons {
+  display: flex;
+  margin-left: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.statistics {
+  font-size: 24px;
+}
+
+.statistics p,
+.buttons p {
+  font-size: 34px;
+}
