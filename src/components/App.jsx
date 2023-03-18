@@ -1,8 +1,8 @@
 import { Component } from 'react';
-import { Section } from './Section/Section';
-import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
-import { Statistics } from './Statistics/Statistics';
-import { Notification } from './Notification/Notification';
+// import { Section } from './Section/Section';
+// import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
+// import { Statistics } from './Statistics/Statistics';
+// import { Notification } from './Notification/Notification';
 
 export class App extends Component {
   state = {
@@ -16,29 +16,30 @@ export class App extends Component {
     options: ['good', 'neutral', 'bad'],
   };
 
-  handleClick = currentBtnName => {
-    this.setState(prevState => {
-      return { [currentBtnName]: prevState[currentBtnName] + 1 };
-    });
+  // handleClick = currentBtnName => {
+  //   this.setState(prevState => {
+  //     return { [currentBtnName]: prevState[currentBtnName] + 1 };
+  //   });
 
-    this.countTotalFeedback();
-    this.countPositiveFeedbackPercentage();
-  };
+  //   this.countTotalFeedback();
+  //   this.countPositiveFeedbackPercentage();
+  // };
 
-  countTotalFeedback = () =>
-    this.setState(prevState => ({
-      total: prevState.good + prevState.neutral + prevState.bad,
-    }));
+  // countTotalFeedback = () =>
+  //   this.setState(prevState => ({
+  //     total: prevState.good + prevState.neutral + prevState.bad,
+  //   }));
 
-  countPositiveFeedbackPercentage = () =>
-    this.setState(prevState => ({
-      average: Math.round((100 / prevState.total) * prevState.good),
-    }));
+  // countPositiveFeedbackPercentage = () =>
+  //   this.setState(prevState => ({
+  //     average: Math.round((100 / prevState.total) * prevState.good),
+  //   }));
 
   render() {
     return (
       <div>
-        <Section title="Please leave feedback">
+        clear
+        {/* <Section title="Please leave feedback">
           <FeedbackOptions
             options={this.state.options}
             onLeaveFeedback={this.handleClick}
@@ -58,7 +59,7 @@ export class App extends Component {
               positivePercentage={this.state.average}
             ></Statistics>
           </Section>
-        </Notification>
+        </Notification> */}
       </div>
     );
   }
