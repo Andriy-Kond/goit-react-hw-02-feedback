@@ -38,7 +38,6 @@ export class App extends Component {
   render() {
     return (
       <div>
-        clear
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={this.state.options}
