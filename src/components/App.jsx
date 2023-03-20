@@ -28,11 +28,12 @@ export class App extends Component {
 
   render() {
     const { good, neutral, bad } = this.state;
+
     return (
       <div>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={['good', 'neutral', 'bad']}
+            options={Object.keys(this.state)}
             onLeaveFeedback={this.handleClick}
           ></FeedbackOptions>
         </Section>
